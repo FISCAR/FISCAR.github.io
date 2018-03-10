@@ -360,14 +360,17 @@
   margin-right: -50%;
   transform: translate(-50%, -50%); 
   transition: .5s;
+  overflow: auto;
 }
 	#frontDisplay h4{
 	  text-align: center;
 	  font-family: 'Fjalla One', sans-serif;
+	  line-height: 200%;
 	}
 	#frontDisplay h2{
 	  text-align: center;
 	  font-family: 'Fjalla One', sans-serif;
+	line-height: 200%;
 	}
 #frontDisplay.open{
   height: 80%;
