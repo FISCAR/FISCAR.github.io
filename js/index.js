@@ -75,6 +75,7 @@ menuLabel[0].onclick = function(){
 			}
 		}
 	}
+	frontDisplay.classList.remove('open');
 	mission.classList.remove('open');
 	historyDiv.classList.remove('open');
 	contact.classList.remove('open');
@@ -132,6 +133,7 @@ menuLabel[1].onclick = function(){
 			}
 		}
 	}
+	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	historyDiv.classList.remove('open');
 	contact.classList.remove('open');
@@ -189,6 +191,7 @@ menuLabel[2].onclick = function(){
 			}
 		}
 	}
+	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	mission.classList.remove('open');
 	contact.classList.remove('open');
@@ -246,6 +249,7 @@ menuLabel[3].onclick = function(){
 			}
 		}
 	}
+	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	mission.classList.remove('open');
 	historyDiv.classList.remove('open');
@@ -256,6 +260,7 @@ menuLabel[3].onclick = function(){
 	clicked[4] = false;
 }
 menuLabel[4].onclick = function(){
+	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	mission.classList.remove('open');
 	historyDiv.classList.remove('open');
@@ -272,6 +277,7 @@ menuLabel[4].onclick = function(){
 		}
 		clicked[4] = false;
 	}else{
+		
 		other.classList.add('open');
 		menuButton[4].classList.remove('defaultAnimation');
 		menuButton[4].classList.add('activated');
