@@ -360,9 +360,7 @@
   margin-right: -50%;
   transform: translate(-50%, -50%); 
   transition: .5s;
-  overflow: auto;
 }
-
 #frontDisplay.open{
   height: 80%;
   transition: .5s;
@@ -385,6 +383,8 @@
   height: 50vh;
   background-color: rgba(190, 196, 246, .7);
   border-radius: 5px;
+  white-space: normal;
+  overflow: auto;
 }
 	#servicesTab1{
 	  left: 22.5%;
@@ -441,13 +441,13 @@
 	  width: 40vw;
 	}
 	#missionTab3.open{
-	  height: 20vh;
+	  height: 23vh;
 	}
 		#missionTab3 h1{
 		  text-align: center;
-	      font-family: 'Fjalla One', sans-serif;
-		  padding-top: 3vh;
-		  word-spacing: 3vw;
+	          font-family: 'Fjalla One', sans-serif;
+		  padding-top: 0vh;
+		  word-spacing: 2vw;
 		}
 		#missionTab3 p{
 		  text-align: center;
@@ -621,7 +621,7 @@
 	.otherInfo h5{
 	  text-align: center;
 	  font-family: 'Fjalla One', sans-serif;
-	  padding-top: 3vh;
+	  padding-top: 2vh;
 	}
 	.otherInfo p{
 	  display: block;
