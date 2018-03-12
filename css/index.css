@@ -39,7 +39,7 @@
 	  overflow: hidden;
 	}
 		#mainMenu{
-		  /*list-style: none;*/
+		  list-style: none;
 		}
 		#mainMenu li {
 		  height: 10vh;
@@ -363,17 +363,9 @@
   transition: .5s;
   overflow: hidden;
 }
-	#frontDisplay img{
-	  max-width: 90%;
-	  max-height: 90%;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-	  padding-top: 2vh;
-	}
+
 #frontDisplay.open{
   height: 80%;
-  transition: .5s;
   border-radius: 5px;
 }
 /*Picture Glider*/
@@ -386,66 +378,11 @@
   padding: 0;
   border-radius: 5px;
 }
-#theCarousel .slide1{
-  background: url('../img/1.jpg');
-  background-repeat: no-reapeat;
-  background-position: center center;
-  background-size: cover;
-  border-radius: 5px;
-  height: 80vh;
-}
-#theCarousel .slide2{
-  background: url('../img/2.jpg');
-  background-repeat: no-reapeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5px;
-  height: 80vh;
-}
-#theCarousel .slide3{
-  background: url('../img/3.jpg');
-  background-repeat: no-reapeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5px;
-  height: 80vh;
-}	
-#theCarousel .slide4{
-  background: url('../img/4.jpg');
-  background-repeat: no-reapeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5px;
-  height: 80vh;
-}
-#theCarousel .slide5{
-  background: url('../img/5.jpg');
-  background-repeat: no-reapeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5px;
-  height: 80vh;
-}
-#theCarousel .slide6{
-  background: url('../img/6.jpg');
-  background-repeat: no-reapeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5px;
-  height: 80vh;
-}
-#theCarousel .carousel-caption{
-  position: absolute;
-  width: 100%;
-  background: rgba(190, 196, 246, .7);
-  margin-left: -20%;
-  top: 80%;
-  text-align: center;
-}
-
-.carousel-caption h1{
-  font-family: 'Share Tech Mono', sans-serif;
-  text-align: center;
+#theCarousel img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vh;
 }			
 /*Hidden Content*/
 .servicesInfo{
