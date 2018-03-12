@@ -361,6 +361,7 @@
   margin-right: -50%;
   transform: translate(-50%, -50%); 
   transition: .5s;
+  overflow: hidden;
 }
 	#frontDisplay img{
 	  max-width: 90%;
