@@ -1,22 +1,22 @@
-var 	frontDisplay = document.getElementById('frontDisplay');
+var frontDisplay = document.getElementById('frontDisplay');
 	pageBrand = document.getElementById('pageBrand');
-	menuButton = document.getElementsByClassName('menuButton');
-	menuLabel = document.getElementsByClassName('menuLabel');
-	services = document.getElementById('services');
-	mission = document.getElementById('mission');
-	historyDiv = document.getElementById('historyDiv');
-	contact = document.getElementById('contact');
-	other = document.getElementById('other');
-	servicesButton = document.getElementsByClassName('servicesButton');
-	missionButton = document.getElementsByClassName('missionButton');
-	historyButton = document.getElementsByClassName('historyButton');
-	contactButton = document.getElementsByClassName('contactButton');
-	otherButton = document.getElementsByClassName('otherButton');
-	servicesInfo = document.getElementsByClassName('servicesInfo');
-	missionInfo = document.getElementsByClassName('missionInfo');
-	historyInfo = document.getElementsByClassName('historyInfo');
-	contactInfo = document.getElementsByClassName('contactInfo');
-	otherInfo = document.getElementsByClassName('otherInfo');
+	menuButton = document.getElementsByClassName('menuButton'),
+	menuLabel = document.getElementsByClassName('menuLabel'),
+	services = document.getElementById('services'),
+	mission = document.getElementById('mission'),
+	historyDiv = document.getElementById('historyDiv'),
+	contact = document.getElementById('contact'),
+	other = document.getElementById('other'),
+	servicesButton = document.getElementsByClassName('servicesButton'),
+	missionButton = document.getElementsByClassName('missionButton'),
+	historyButton = document.getElementsByClassName('historyButton'),
+	contactButton = document.getElementsByClassName('contactButton'),
+	otherButton = document.getElementsByClassName('otherButton'),
+	servicesInfo = document.getElementsByClassName('servicesInfo'),
+	missionInfo = document.getElementsByClassName('missionInfo'),
+	historyInfo = document.getElementsByClassName('historyInfo'),
+	contactInfo = document.getElementsByClassName('contactInfo'),
+	otherInfo = document.getElementsByClassName('otherInfo'),
 	clicked = [false, false, false, false, false];
 	sClicked = [false, false, false, false, false];
 	mClicked = [false, false, false, false, false];
@@ -24,8 +24,6 @@ var 	frontDisplay = document.getElementById('frontDisplay');
 	cClicked = [false, false, false, false, false];
 	oClicked = [false, false, false, false, false];
 	scrollCount = 0;
-	/*For Small Display*/
-	accMenu = document.getElementsByClassName('accordion');
 
 menuLabel[0].onclick = function(){
 	if (clicked[0]){
@@ -75,7 +73,6 @@ menuLabel[0].onclick = function(){
 			}
 		}
 	}
-	frontDisplay.classList.remove('open');
 	mission.classList.remove('open');
 	historyDiv.classList.remove('open');
 	contact.classList.remove('open');
@@ -133,7 +130,6 @@ menuLabel[1].onclick = function(){
 			}
 		}
 	}
-	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	historyDiv.classList.remove('open');
 	contact.classList.remove('open');
@@ -191,7 +187,6 @@ menuLabel[2].onclick = function(){
 			}
 		}
 	}
-	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	mission.classList.remove('open');
 	contact.classList.remove('open');
@@ -249,7 +244,6 @@ menuLabel[3].onclick = function(){
 			}
 		}
 	}
-	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	mission.classList.remove('open');
 	historyDiv.classList.remove('open');
@@ -260,7 +254,6 @@ menuLabel[3].onclick = function(){
 	clicked[4] = false;
 }
 menuLabel[4].onclick = function(){
-	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	mission.classList.remove('open');
 	historyDiv.classList.remove('open');
@@ -277,7 +270,6 @@ menuLabel[4].onclick = function(){
 		}
 		clicked[4] = false;
 	}else{
-		
 		other.classList.add('open');
 		menuButton[4].classList.remove('defaultAnimation');
 		menuButton[4].classList.add('activated');
@@ -583,7 +575,6 @@ menuButton[2].onclick = function(){
 			}
 		}
 	}
-	frontDisplay.classList.remove('open');
 	frontDisplay.classList.remove('open');
 	services.classList.remove('open');
 	mission.classList.remove('open');
@@ -949,14 +940,6 @@ if (document.readyState === 'loading'){
 	frontDisplay.classList.add('open');
 }
 
-/*
-if (mainPage.addEventListener) {
- mainPage.addEventListener("mousewheel", MouseWheelHandler, false);
- mainPage.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-}
-else mainPage.attachEvent("onmousewheel", MouseWheelHandler);
-*/
-
 mainPage.addEventListener('wheel', function MouseWheelHandler(e) {
 	if (e.deltaY < 0){
 		var i = Math.abs((scrollCount-=1)%6);
@@ -964,10 +947,7 @@ mainPage.addEventListener('wheel', function MouseWheelHandler(e) {
 	if (e.deltaY > 0){
 		i = (scrollCount+=1)%6;
 	}
-	/*var e = window.event || e,
-		delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))),
-		
-	pageBrand.innerHTML = i;*/
+
     switch(i){
 		case 1:
 			frontDisplay.classList.add('open');
@@ -1280,15 +1260,4 @@ mainPage.addEventListener('wheel', function MouseWheelHandler(e) {
  return false;
 });
 
-/*Accordion control for small display*/
-for (iAcc=0; iAcc < accMenu.length; iAcc++){
-  accMenu[iAcc].addEventListener("click", function(){
-	this.classList.toggle("activate");
-  var panel = this.nextElementSibling;
-  if (panel.style.display === "block"){
-  	panel.style.display = "none";
-  } else {
-  	panel.style.display = "block";
-  }
-  });
-}
+
