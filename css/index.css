@@ -1,3 +1,8 @@
+:root{
+  --boxColor: rgba(0,0,0, .7);/*190, 196, 246, .9);*/
+  --textColor: rgba(250,250,250,1);
+  --menuColor: rgb(0,0,0);
+}
 @media (min-width: 768px){
 *{
   padding: 0;
@@ -5,6 +10,11 @@
   border: 0;
 }
 
+#mainPage{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 /*Header*/
 #headerWrapper{
   height: 15vh;
@@ -26,7 +36,7 @@
 /*Content*/
 #contentWrapper{
   min-height: 80vh;
-  overflow: hidden;
+  overflow: auto;
   white-space: nowrap;
 }	
 	/*Left*/
@@ -49,6 +59,7 @@
 		  
 		}
 		.menuLabel{
+		  color: var(--menuColor);
 		  font-size: 10px;
 		  text-align: center;
 		  min-width: 100%;
@@ -162,7 +173,6 @@
 	  display: inline;
 	}
 	#centerWrapper div ul{
-	  background: red;
 	  background: url('img/sand3.png');
 	  background-repeat: repeat;
 	  background-position: center;
@@ -239,7 +249,6 @@
 		  margin-top: 10vh;
 		  width: 0%;
 		  height: 5vh;
-		
 		  -webkit-transition: width 1s;
 		  transition: width 1s;
 		}
@@ -350,11 +359,14 @@
 		  margin-right: -50%;
 		  transform: translate(-50%, -50%);
 		}
+	.text{
+	  color: var(--textColor);
+	}
 /*Starting Display*/
 #frontDisplay{
   width: 80%;
   height: 0;
-  background: rgba(190, 196, 246, .7);
+  background: var(--boxColor);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -377,13 +389,15 @@
   margin: 0;
   padding: 0;
   border-radius: 5px;
+  background-color: var(--boxColor);
 }
 #theCarousel img{
   display:block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2vh;
-}			
+}
+			
 /*Hidden Content*/
 .servicesInfo{
   width: 12vw;
@@ -398,7 +412,7 @@
 }
 .servicesInfo.open{
   height: 50vh;
-  background-color: rgba(190, 196, 246, .7);
+  background-color: var(--boxColor);
   border-radius: 5px;
   white-space: normal;
   overflow: auto;
@@ -441,7 +455,7 @@
 }
 .missionInfo.open{
   height: 40vh;
-  background-color: rgba(190, 196, 246, .7);
+  background-color: var(--boxColor);
   white-space: normal;
   overflow: auto;
   border-radius: 0px;
@@ -503,7 +517,7 @@
 }
 .historyInfo.open{
   height: 30vh;
-  background-color: rgba(190, 196, 246, .7);
+  background-color: var(--boxColor);
   white-space: normal;
   overflow: auto;
   border-radius: 5px;
@@ -553,7 +567,7 @@
 }
 .contactInfo.open{
   height: 40vh;
-  background-color: rgba(190, 196, 246, .7);
+  background-color: var(--boxColor);
   border-radius: 5px;
   white-space: normal;
   overflow: auto;
@@ -612,7 +626,7 @@
 }
 .otherInfo.open{
   height: 50vh;
-  background-color: rgba(190, 196, 246, .7);
+  background-color: var(--boxColor);
   border-radius: 5px;
 }
 	#otherTab1{
@@ -678,7 +692,12 @@
 
 /*Content*/
 #contentWrapper{
-	display: none;
+  display: none;
+}
+#mainPage{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }	
 #smallContent img{
   max-width: 10%;
