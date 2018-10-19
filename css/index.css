@@ -537,6 +537,9 @@
 	  line-height: 100%;	
 	  text-align: center;
 	}
+.textContent{
+	  font-size: 1vw;
+}
 #smallContent{
   display: none;
 }
