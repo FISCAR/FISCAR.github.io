@@ -9,7 +9,6 @@
   margin: 0;
   border: 0;
 }
-
 #mainPage{
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,24 +44,7 @@
 	}
 
 /*Content*/
-.textContent{
-	  font-size: 1vw;
-	  position:absolute;
-	  transform: transtlateY(0);
-	  transition: 20s;
-}
-.servicesInfo:hover div{
-	  transform: translateY(calc(-200px - 100%));
-}
-.missionInfo:hover div{
-	  transform: translateY(calc(-200px - 100%));
-}
-.historyInfo:hover div{
-	  transform: translateY(calc(-200px - 100%));
-}
-.contactInfo:hover div{
-	  transform: translateY(calc(-200px - 100%));
-}
+
 #contentWrapper{
   min-height: 80vh;
   overflow: hidden;
@@ -555,6 +537,25 @@
 	  line-height: 100%;	
 	  text-align: center;
 	}
+.textContent{
+	  font-size: 1vw;
+	  position:absolute;
+	  transform: transtlateY(0);
+	  transition: 20s;
+}
+.servicesInfo:hover div{
+	  transform: translateY(calc(-200px - 100%));
+}
+.missionInfo:hover div{
+	  transform: translateY(calc(-200px - 100%));
+}
+.historyInfo:hover div{
+	  transform: translateY(calc(-200px - 100%));
+}
+.contactInfo:hover div{
+	  transform: translateY(calc(-200px - 100%));
+}	
+
 #smallContent{
   display: none;
 }
