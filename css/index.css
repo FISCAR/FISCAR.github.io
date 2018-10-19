@@ -95,13 +95,6 @@
 		.menuButton{
 		  float: right;
 		}
-		.menuButton.defaultAnimation{}
-
-		.menuButton.activated{}
-
-			
-		span{font-size: 3vh;
-		}
 		
 		.glyphicon-cog{
 			  -webkit-animation: spin 6s linear 0s infinite reverse;
