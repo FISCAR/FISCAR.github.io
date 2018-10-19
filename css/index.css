@@ -45,6 +45,24 @@
 	}
 
 /*Content*/
+.textContent{
+	  font-size: 1vw;
+	  position:absolute;
+	  transform: transtlateY(0);
+	  transition: 20s;
+}
+.servicesInfo:hover div{
+	  transform: translateY(calc(-200px - 100%));
+}
+.missionInfo:hover div{
+	  transform: translateY(calc(-200px - 100%));
+}
+.historyInfo:hover div{
+	  transform: translateY(calc(-200px - 100%));
+}
+.contactInfo:hover div{
+	  transform: translateY(calc(-200px - 100%));
+}
 #contentWrapper{
   min-height: 80vh;
   overflow: hidden;
@@ -356,7 +374,7 @@
 		  padding-top: 0vh;
 		  word-spacing: 2vw;
 		}
-		#missionTab3 p{
+		#missionTab3 div{
 		  text-align: center;
 		}
 	#missionTab4{
@@ -375,7 +393,7 @@
 	  text-align: center;
 	  font-family: 'Fjalla One', sans-serif;
 	}
-	.missionInfo p{
+	.missionInfo div{
 	  display: block;
 	  font-family: 'Share Tech Mono', sans-serif;
 	  padding: 5px;
@@ -424,7 +442,7 @@
 	  text-align: center;
 	  font-family: 'Fjalla One', sans-serif;
 	}
-	.historyInfo p{
+	.historyInfo div{
 	  display: block;
 	  font-family: 'Share Tech Mono', sans-serif;
 	  padding: 5px;
@@ -537,9 +555,6 @@
 	  line-height: 100%;	
 	  text-align: center;
 	}
-.textContent{
-	  font-size: 1vw;
-}
 #smallContent{
   display: none;
 }
